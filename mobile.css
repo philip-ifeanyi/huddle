@@ -152,8 +152,9 @@ p {
     margin-top: 0;
   }
 
-  #main-header .showcase p {
+  #main-header .showcase .showcase-text p {
     color: #000;
+    padding-bottom: 1rem;
   }
 
   #main-header .showcase .showcase-text, #main-header .showcase .showcase-image  {
