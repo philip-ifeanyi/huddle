@@ -20,6 +20,10 @@ p {
   height: 120vh;
 }
 
+#main-header .container {
+  padding-top: 1rem;
+}
+
 #main-header .nav-bar {
   margin-bottom: 0;
 }
