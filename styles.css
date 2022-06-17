@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open-Sans", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  font-weight: 400;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 2rem 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  outline: 0;
+  border-radius: 5rem;
+  border: none;
+  background-color: #fff;
+  color: hsl(192, 100%, 9%);
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1), -2px -2px 5px 0 rgba(0, 0, 0, 0.1);
+  transition: transform ease-in 1ms;
+  border: 0.1px solid #fff;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  background-color: #fafafa;
+  color: #333;
+}
+
+.bg-primary {
+  box-shadow: none;
+  color: #fff;
+  background: hsl(322, 100%, 66%);
+}
+
+.bg-primary:hover {
+  background-color: #ff9bdb;
+  color: #fafafa;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  color: hsl(208, 11%, 55%);
+}
+
+.py {
+  padding: 1rem 0;
+}
+
+.py-min {
+  padding: 0.5rem 0;
+}
+
+
+/* Header & Main-Section */
+#main-header {
+  background: hsl(193, 100%, 96%) url("./images/bg-hero-desktop.svg") no-repeat center center/cover;
+  height: 100vh;
+  margin-bottom: 4rem;
+}
+
+#main-header .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+#main-section {
+  position: relative;
+}
+
+#main-header .showcase .showcase-image  {
+  width: 60%;
+  margin: auto;
+}
+
+#main-header .showcase .showcase-image img {
+  width: 100%;
+}
+
+#main-header .showcase, #main-section .grow, #main-section .convos,  #main-section .users {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-header .showcase .showcase-text, #main-section .grow .grow-text, #main-section .convos .convos-text,  #main-section .users .users-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+}
+
+#main-header .showcase .showcase-text p {
+  padding-bottom: 2rem;
+}
+
+#main-section .grow, #main-section .convos, #main-section .users {
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1), -2px -2px 5px 0 rgba(0, 0, 0, 0.1);
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  width: 90%;
+}
+
+#main-section .grow .grow-text, #main-section .convos .convos-text,  #main-section .users .users-text {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  flex: 2;
+}
+
+#main-section .convos .convos-image {
+  margin-left:5rem;
+}
+
+#main-section .convos .convos-text {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 6rem;
+}
+
+#main-section .users {
+  margin-bottom: 10rem;
+}
+
+#main-section .ready {
+  position: absolute;
+  left: 50%;
+  bottom: -6%;
+  transform: translate(-50%, 6%);
+  padding: 2rem 3rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1), -2px -2px 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#main-footer{
+  padding-top: 7rem;
+  background-color: hsl(192, 100%, 9%);
+}
+
+#main-footer p {
+  color: #fff;
+}
+
+#main-footer .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem 4rem;
+}
+
+#main-footer .container .logo, #main-footer .container .copyright {
+  grid-column: 1 /span 4;
+}
+
+#main-footer .container .copyright {
+  text-align: right;
+}
+
+#main-footer .container .location, #main-footer .container  .mail, #main-footer .container  .phone, #main-footer .container  .socials {
+  display: flex;
+}
+
+.location img, .mail img, .phone img {
+  margin-right: 1rem;
+}
+
+#main-footer .container  .socials {
+  align-items: flex-start;
+}
+
+#main-footer .container  .socials .circle {
+  padding: 0.5rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-footer .container  .socials .circle:hover {
+  color: hsl(322, 100%, 66%);
+}
