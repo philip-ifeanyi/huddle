@@ -138,7 +138,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   #main-header .nav-bar .logo img {
@@ -166,7 +166,7 @@ p {
   }
 
   #main-header .showcase .showcase-text {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 0;
   }
 
