@@ -172,6 +172,7 @@ p {
 
   #main-header .showcase .showcase-image {
     margin: auto;
+    width: 100%;
   }
 
   #main-header .showcase .showcase-image img {
@@ -184,7 +185,7 @@ p {
     align-items: center;
     border-radius: 1rem;
     margin-bottom: 2rem;
-    padding: 1rem 1rem;
+    /* padding: 1rem; */
     width: 100%;
   }
 
